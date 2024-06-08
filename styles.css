@@ -1,0 +1,35 @@
+.element::before {
+  content: "Before ";
+  color: blue;
+}
+
+.element::after {
+  content: " After";
+  color: red;
+}
+
+.button::before {
+  content: "Click me";
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.button::after {
+  content: "";
+  /* content: url("icon-internet.png"); */
+  /* Якщо використовувати, то не зможемо напряму змінити розміри зображення за допомогою width і height. Для зміни розмірів - background-image або інший спосіб вставки іконки, наприклад, через HTML або SVG. */
+  display: inline-block;
+
+  width: 22px;
+  height: 22px;
+
+  background-image: url("icon-internet.png");
+  background-size: cover;
+
+  margin-left: 10px;
+  vertical-align: middle;
+}
